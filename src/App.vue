@@ -1,8 +1,5 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+
   <router-view/>
 </template>
 
@@ -15,16 +12,35 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.white-radius {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+/* 单行省略号*/
+.one-hide {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.three-hide {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.cls-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.cls-flex {
+  display: flex;
+  align-items: center;
 }
 </style>
